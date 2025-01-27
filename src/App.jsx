@@ -6,7 +6,7 @@ import Event from './components/Event';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Snowfall from 'react-snowfall';
 import SeceteSanta from './components/SeceteSanta';
-import ResponsiveNavBar from "./components/ResponsiveNavbar";
+import ResponsiveNavBar from "./components/ResponsiveNavBar";
 import Sendwishes from './components/Sendwishes';
 import { Toaster } from 'react-hot-toast';
 import State from './context/contextapi/State';
