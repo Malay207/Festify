@@ -1,0 +1,71 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 9999;
+    animation: preloadbody 2s ease-out 2s forwards;
+    overflow: hidden;
+}
+
+.preloader-text {
+    font-size: 5rem;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.preloader-text span {
+    font-size: 5rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(42px);
+    transition: transform 0.5s ease-in-out;
+    animation: fadeSpring 2s ease-in forwards;
+}
+
+.preloader-text span:nth-child(1) {
+    animation-delay: 0s;
+    /* First word */
+}
+
+.preloader-text span:nth-child(2) {
+    animation-delay: 0.5s;
+    /* Second word */
+}
+
+.preloader-text span:nth-child(3) {
+    animation-delay: 1s;
+    /* Third word */
+}
+
+@keyframes fadeSpring {
+    from {
+        opacity: 0;
+        transform: translateY(-42px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Slightly larger for spring effect */
+    }
+
+}
+
+@keyframes preloadbody {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0%;
+    }
+
+}

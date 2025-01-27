@@ -1,0 +1,11 @@
+.main{
+    background-color: rgba(43, 43, 43, 0.461);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+
+
+}

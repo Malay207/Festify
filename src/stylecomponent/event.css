@@ -1,0 +1,8 @@
+.maineventscreen{
+    height: calc(100vh - 102px);
+}
+.popover_div{
+    background-color: #2C271E;
+    color: white;
+
+}
